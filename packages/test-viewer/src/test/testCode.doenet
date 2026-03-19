@@ -1,43 +1,28 @@
-<graph>
-  <point name="P" x="3" y="1" />
-  <rectangle width="40" height="40" center="(0,0)" filled name="R" />
-</graph>
-<number name="n">1</number> <updateValue
-  triggerWhenObjectsClicked="$P $R"
-  newValue="$n+1"
-  target="$n"
-/>
-<p>Use this to <m>a < b</m>test DoenetML</p>
-<p>A second paragraph!</p>
-<!-- <graph showNavigation>
-  <line through="(-8,8) (9,6)" />
-  <line through="(0,4)" slope="1/2" styleNumber="2" />
-
-  <line equation="y=2x-8" styleNumber="3" />
-  <line equation="x=-6" styleNumber="4" />
-</graph> -->
-<section boxed>
-  <p>A lovely section.</p>
-  <problem>
-    <p>
-      This problem is nested inside a section. The default number does not
-      include the parent number.
-    </p>
-  </problem>
-</section>
-
-<section boxed>
-  <p>Another section!</p>
-  <problem includeParentNumber="true">
-    <p>
-      This exercise is nested inside a section. Rendering of the parent section
-      number has been included.
-    </p>
-  </problem>
-</section>
-
-<problem><p><answer>42</answer></p></problem>
-
 <section>
-  <p><lorem generateWords="10" /></p>
+  <title>Integer Representation Tests</title>
+
+  <subsection>
+    <title>1. Binary: 1001 should equal 9</title>
+    <integer name="bin1" representation="binary">1001</integer>
+    <p>Display: $bin1</p>
+    <p>Value: $bin1.value</p>
+    <p>Decimal: $bin1.decimal</p>
+  </subsection>
+
+  <subsection>
+    <title>2. Hex: FF should equal 255</title>
+    <integer name="hex1" representation="hexadecimal">FF</integer>
+    <p>Display: $hex1</p>
+    <p>Value: $hex1.value</p>
+    <p>Decimal: $hex1.decimal</p>
+  </subsection>
+
+  <subsection>
+    <title>3. Decimal: 16 (default)</title>
+    <integer name="dec1">16</integer>
+    <p>Display: $dec1</p>
+    <p>Value: $dec1.value</p>
+    <p>Binary: $dec1.binary</p>
+  </subsection>
+
 </section>

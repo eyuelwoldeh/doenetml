@@ -76,6 +76,7 @@ packages/prefigure/src/worker/liblouis/generated/*.ctb
 packages/prefigure/src/worker/liblouis/generated/*.uti
 packages/prefigure/src/worker/liblouis/generated/*.dis
 .cspell
+.aider*
 
 packages/doenetml-to-pretext-python/doenetml_to_pretext/js-assets/*
 packages/doenetml-print/python/pretext_wasm/core/*
